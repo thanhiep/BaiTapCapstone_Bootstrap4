@@ -195,12 +195,9 @@ header .searchButton:hover {
 #pooCarousel .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
-    width: 700px;
+    max-width: 700px;
     text-transform: capitalize;
-}
-
-#pooCarousel .carousel-caption.rightCaption {
-    left: 45%;
+    padding-left: 31px;
 }
 
 #pooCarousel .carousel-caption h5 {
@@ -215,13 +212,16 @@ header .searchButton:hover {
     line-height: 30px;
     opacity: 0.9;
     font-size: 1.2rem;
-    padding-bottom: 30px;
 }
 
 #pooCarousel .carousel-caption .btn-outline-primary {
     border: 2px solid white;
     color: white;
-    margin-left: 10px;
+}
+
+#pooCarousel .carousel-caption .btn-primary,
+#pooCarousel .carousel-caption .btn-outline-primary {
+    margin: 20px 10px 0 0;
 }
 
 #pooCarousel .carousel-caption .btn-primary,
@@ -263,11 +263,6 @@ header .searchButton:hover {
     #pooCarousel .carousel-caption p {
         font-size: 15px;
     }
-
-    #pooCarousel .carousel-caption.rightCaption {
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
 }
 
 @media screen and (max-width:992px) {
@@ -279,28 +274,29 @@ header .searchButton:hover {
     #pooCarousel .carousel-caption p {
         font-size: 15px;
     }
-
-    #pooCarousel .carousel-caption {
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
 }
 
 @media screen and (max-width:768px) {
-    #pooCarousel .carousel-item img{
-        height: 70vh;
+    #pooCarousel .carousel-item img {
+        height: 75vh;
     }
+
     #pooCarousel .carousel-caption p {
         font-size: 16px;
     }
-}
-@media screen and (max-width:576px){
-    #pooCarousel .carousel-caption h5 {
-        font-size: 32px;
-    line-height: 42px;
+
+    #pooCarousel .carousel-caption {
+        top: 45%;
     }
 }
+
+@media screen and (max-width:480px) {
+    #pooCarousel .carousel-caption h5 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
 /* ABOUT */
 .about {
     padding: 70px 0;
@@ -408,7 +404,7 @@ header .searchButton:hover {
 }
 
 /* offer responsive */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .offerLeft {
         padding: 0 0 70px 0;
     }
