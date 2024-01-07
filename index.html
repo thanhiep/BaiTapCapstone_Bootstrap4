@@ -299,10 +299,115 @@
     </section>
 
     <!-- NUMBER  -->
-    <section class="number"></section>
+    <section class="number">
+        <div class="container">
+            <div class="number__content">
+                <div class="number__item">
+                    <p class="counter">730</p>
+                    <h4>Happy Clients</h4>
+                </div>
+                <div class="number__item">
+                    <p class="counter">80</p>
+                    <h4>Professionals</h4>
+                </div>
+                <div class="number__item">
+                    <p class="counter">812</p>
+                    <h4>Adopted Pets</h4>
+                </div>
+                <div class="number__item">
+                    <p class="counter">90</p>
+                    <h4>Awards</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- PLANS -->
-    <section class="plans"></section>
+    <section class="plans" id="pricing">
+        <div class="pricing-7-sec pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
+            <div class="container pricing-grid PricingPlans">
+                <div class="heading text-center mx-auto">
+                    <h6 class="sub-title">Our Plans</h6>
+                    <h3 class="hny-title mb-5">Affordable Packages</h3>
+                </div>
+                <div class="plans__content justify-content-center no-gutters">
+                    <!-- pricing grid 1 -->
+                    <div class="plans__group col-lg-4">
+                        <div class="plans__pricing">
+                            <div class="plans__pricing__top">
+                                <h6 class="one-light">Free Package</h6>
+                                <h4><label>$ </label>0<span>/month</span></h4>
+                            </div>
+                            <div class="plans__pricing__bottom">
+                                <div class="w3l-pricing-7-bottom-bottom">
+                                    <ul class="links">
+                                        <li>5 Dog Walk</li>
+                                        <li>3 Vet Visit</li>
+                                        <li>3 Pet Spa</li>
+                                        <li>Free Supports</li>
+                                        <li>Customer Support</li>
+                                    </ul>
+                                </div>
+                                <div class="buy-button">
+                                    <a class="popup btn btn-style btn-primary" href="#url">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pricing grid 2 -->
+                    <div class="plans__group active col-lg-4">
+                        <div class="plans__pricing">
+                            <div class="plans__pricing__top">
+                                <h5>Save 10% </h5>
+                                <h6>Standard Package</h6>
+                                <h4><label>$</label>39<span>/month</span></h4>
+                            </div>
+                            <div class="plans__pricing__bottom">
+                                <div class="w3l-pricing-7-bottom-bottom">
+                                    <ul class="links">
+                                        <li>5 Dog Walk</li>
+                                        <li>3 Vet Visit</li>
+                                        <li>3 Pet Spa</li>
+                                        <li>Free Supports</li>
+                                        <li>Customer Support</li>
+                                    </ul>
+                                </div>
+                                <div class="buy-button">
+                                    <a class="popup btn btn-style btn-primary" href="#url">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pricing grid 3 -->
+                    <div class="plans__group col-lg-4">
+                        <div class="plans__pricing">
+                            <div class="plans__pricing__top">
+                                <h6 class="one-light">Pro Package</h6>
+                                <h4><label>$</label>89<span>/month</span></h4>
+                            </div>
+                            <div class="plans__pricing__bottom">
+                                <div class="w3l-pricing-7-bottom-bottom">
+                                    <ul class="links">
+                                        <li>5 Dog Walk</li>
+                                        <li>3 Vet Visit</li>
+                                        <li>3 Pet Spa</li>
+                                        <li>Free Supports</li>
+                                        <li>Customer Support</li>
+                                    </ul>
+                                </div>
+                                <div class="buy-button">
+                                    <a class="popup btn btn-style btn-primary" href="#url">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- VIDEO -->
     <section class="video"></section>
@@ -320,6 +425,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- WAYPOINT -->
+    <!-- Xác định thời điểm, vị trí bắt đầu chạy hiệu ứng. Ở đây là khi người dùng scoll trang web đến đúng vị trí -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- COUNT UP -->
+    <!-- THƯ VIỆN COUNT UP -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <!-- SCRIPT COUNT UP -->
+    <script>
+        // tìm tới thẻ có class là counter và gắn hiệu ứng vào thẻ tìm được
+        $('.counter').countUp();
+    </script>
+
 
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
