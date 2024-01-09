@@ -59,6 +59,71 @@ a:hover {
     text-decoration: none;
 }
 
+/* Light theme */
+#myBody {
+    background-color: white;
+  }
+  #switchButton {
+    background-color: white;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 0;
+    margin-left: 10px;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+    font-size: 20px;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody,
+  .dark header,
+  .dark .services .card {
+    background-color: #151515;
+  }
+
+  .dark header .searchButton,
+  .dark .services,
+  .dark .services .card:hover,
+  .dark .offer i{
+    background-color: #222222;
+  }
+
+  .dark #pooNavbar a,
+  .dark .title h2,
+  .dark .title p:last-of-type,
+  .dark a,
+  .dark .services .card-title a,
+  .dark .services .card-text,
+  .dark .offer ul li span{
+    color: #dddddd;
+  }
+
+  .dark #switchButton {
+    background-color: #151515;
+    border: 1px solid transparent;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: #696969;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  #switchButton:focus{
+    box-shadow: 0 0 0 0;
+  }
+  #switchButton{
+    position: absolute;
+    right: -30px;
+    top:20px;
+  }
+
 /* HEADER */
 header {
     height: 90px;
@@ -149,7 +214,6 @@ header .searchButton:hover {
     color: white;
     background-color: #189A46;
 }
-
 /* header responsive */
 @media screen and (max-width:992px) {
     #resNavbar .navbar-toggler {
@@ -406,6 +470,6 @@ header .searchButton:hover {
 /* offer responsive */
 @media screen and (max-width: 992px) {
     .offerLeft {
-        padding: 0 0 70px 0;
+        padding-bottom: 70px;
     }
 }
