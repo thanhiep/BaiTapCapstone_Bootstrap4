@@ -264,10 +264,14 @@ header .searchButton:hover {
 
     /* dark theme dropdown menu */
     .dark #pooNavbar ul,
-    .dark #pooNavbar .dropdown-menu{
+    .dark #pooNavbar .dropdown-menu,
+    .dark #pooNavbar .dropdown-menu a:hover{
         background-color: #151515;
     }
-
+    .dark #resNavbar .navbar-toggler:focus{
+        outline: 1px solid white;
+        border: 2px solid black;
+    }
 }
 
 /* CAROUSEL */
