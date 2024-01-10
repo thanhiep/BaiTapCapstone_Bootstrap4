@@ -62,67 +62,85 @@ a:hover {
 /* Light theme */
 #myBody {
     background-color: white;
-  }
-  #switchButton {
-    background-color: white;
+}
+
+#switchButton {
+    background-color: transparent;
     border: 1px solid transparent;
     padding: 10px;
     border-radius: 50%;
     line-height: 0;
     margin-left: 10px;
-  }
-  #switchButton .fa-sun {
+}
+
+#switchButton .fa-sun {
     display: none;
-  }
-  #switchButton .fa-moon {
+}
+
+#switchButton .fa-moon {
     display: block;
     font-size: 20px;
-  }
-  
-  /* Dark Theme*/
-  .dark#myBody,
-  .dark header,
-  .dark .services .card {
-    background-color: #151515;
-  }
+}
 
-  .dark header .searchButton,
-  .dark .services,
-  .dark .services .card:hover,
-  .dark .offer i{
+/* Dark Theme*/
+.dark#myBody,
+.dark header,
+.dark .services .card {
+    background-color: #151515;
+}
+
+.dark header .searchButton,
+.dark .services,
+.dark .services .card:hover,
+.dark .offer i {
     background-color: #222222;
-  }
+}
 
-  .dark #pooNavbar a,
-  .dark .title h2,
-  .dark .title p:last-of-type,
-  .dark a,
-  .dark .services .card-title a,
-  .dark .services .card-text,
-  .dark .offer ul li span{
+.dark #pooNavbar a,
+.dark .title h2,
+.dark .title p:last-of-type,
+.dark a,
+.dark .services .card-title a,
+.dark .services .card-text,
+.dark .offer ul li span {
     color: #dddddd;
-  }
+}
 
-  .dark #switchButton {
-    background-color: #151515;
+.dark #switchButton {
+    background-color: transparent;
     border: 1px solid transparent;
-  }
-  .dark #switchButton .fa-sun {
+}
+
+.dark #switchButton .fa-sun {
     display: block;
     color: #696969;
-  }
-  
-  .dark #switchButton .fa-moon {
+}
+
+.dark #switchButton .fa-moon {
     display: none;
-  }
-  #switchButton:focus{
+}
+
+#switchButton:focus {
     box-shadow: 0 0 0 0;
-  }
-  #switchButton{
+}
+
+#switchButton {
     position: absolute;
     right: -30px;
-    top:20px;
-  }
+    top: 20px;
+}
+
+/* responsive dark theme button  */
+@media screen and (max-width:992px){
+    #switchButton{
+        right: 10%;
+    }
+}
+@media screen and (max-width:768px){
+    #switchButton{
+        right: 15%;
+    }
+}
 
 /* HEADER */
 header {
@@ -214,6 +232,7 @@ header .searchButton:hover {
     color: white;
     background-color: #189A46;
 }
+
 /* header responsive */
 @media screen and (max-width:992px) {
     #resNavbar .navbar-toggler {
@@ -230,7 +249,6 @@ header .searchButton:hover {
     #pooNavbar ul {
         background-color: white;
     }
-
     #pooNavbar ul li a {
         text-align: center;
     }
@@ -243,6 +261,13 @@ header .searchButton:hover {
     #pooNavbar .searchButton {
         margin: 30px 0 20px 20px;
     }
+
+    /* dark theme dropdown menu */
+    .dark #pooNavbar ul,
+    .dark #pooNavbar .dropdown-menu{
+        background-color: #151515;
+    }
+
 }
 
 /* CAROUSEL */
