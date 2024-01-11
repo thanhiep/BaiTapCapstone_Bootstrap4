@@ -474,6 +474,7 @@ ul {
     background-color: #116E32;
     border-color: #116E32;
 }
+
 .btn:hover {
     text-decoration: none;
 }
@@ -497,7 +498,7 @@ ul {
 /* !PRICING */
 /* content */
 .w3l-pricing-7-main {
-    background:  rgba(147, 107, 232, 0.05);
+    background: rgba(147, 107, 232, 0.05);
 }
 
 .w3l-pricing-7-main .pricing-gd-left {
@@ -585,7 +586,8 @@ ul {
     font-weight: 600;
 }
 
-.w3l-pricing-7-main .pricing-gd-left.active h6, .w3l-pricing-7-main .pricing-gd-left.active h4 {
+.w3l-pricing-7-main .pricing-gd-left.active h6,
+.w3l-pricing-7-main .pricing-gd-left.active h4 {
     color: #fff;
 }
 
@@ -594,6 +596,122 @@ ul {
     margin-bottom: 5px;
     color: #696969;
 }
+
+/*! VIDEO POPUP */
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute;
+}
+/* video ẩn*/
+#small-dialog {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.mfp-hide {
+    display: none !important;
+}
+
+div#small-dialog iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* video ẩn - end */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.radius-image {
+    border-radius: 10PX;
+}
+
+/* button play */
+.w3l-index5 .play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+
+
+.w3l-index5 span.video-play-icon {
+    background: #fff;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    animation: ripple 1s linear infinite;
+}
+
+.w3l-index5 span.fa.fa-play {
+    line-height: 55px;
+}
+.w3l-index5 span.video-play-icon span {
+    color: #189a46;
+}
+
+
+
+
+
+/*! TESTIMONIAL */
+.w3l-clients {
+    background: rgba(147, 107, 232, 0.05);
+}
+
+.w3l-clients .testimonial {
+    display: block;
+    margin: 0;
+    padding: 40px 30px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+}
+
+.w3l-clients .test-img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 2px;
+    background: #d8d8d8;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 25px;
+    position: relative;
+}
+
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot.active span, .owl-two.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+    background: #189a46;
+    width: 30px;
+    height: 10px;
+}
+
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: transparent;
+}
+
 
 /*! HOMEPAGE SUBSCRIBE */
 
@@ -636,7 +754,8 @@ form {
     margin-bottom: 25px;
 }
 
-.w3l-footer .footer-list-28 ul li a, .w3l-footer .footer-list-28 ul li p {
+.w3l-footer .footer-list-28 ul li a,
+.w3l-footer .footer-list-28 ul li p {
     font-size: 16px;
     color: #696969;
     line-height: 28px;
