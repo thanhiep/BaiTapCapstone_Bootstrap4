@@ -85,7 +85,10 @@ a:hover {
 /* Dark Theme*/
 .dark#myBody,
 .dark header,
-.dark .services .card {
+.dark .services .card,
+.dark #pooNavbar .dropdown-menu,
+.dark #pooNavbar ul,
+.dark #pooNavbar .dropdown-menu a:hover {
     background-color: #151515;
 }
 
@@ -131,13 +134,14 @@ a:hover {
 }
 
 /* responsive dark theme button  */
-@media screen and (max-width:992px){
-    #switchButton{
+@media screen and (max-width:992px) {
+    #switchButton {
         right: 10%;
     }
 }
-@media screen and (max-width:768px){
-    #switchButton{
+
+@media screen and (max-width:768px) {
+    #switchButton {
         right: 15%;
     }
 }
@@ -249,6 +253,7 @@ header .searchButton:hover {
     #pooNavbar ul {
         background-color: white;
     }
+
     #pooNavbar ul li a {
         text-align: center;
     }
@@ -262,13 +267,8 @@ header .searchButton:hover {
         margin: 30px 0 20px 20px;
     }
 
-    /* dark theme dropdown menu */
-    .dark #pooNavbar ul,
-    .dark #pooNavbar .dropdown-menu,
-    .dark #pooNavbar .dropdown-menu a:hover{
-        background-color: #151515;
-    }
-    .dark #resNavbar .navbar-toggler:focus{
+    /* dark theme toggler navbar */
+    .dark #resNavbar .navbar-toggler:focus {
         outline: 1px solid white;
         border: 2px solid black;
     }
