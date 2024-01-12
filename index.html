@@ -81,7 +81,7 @@
                 <button class="btn" id="switchButton" title="Click to switch theme">
                     <i class="far fa-moon"></i>
                     <i class="fa-regular fa-sun"></i>
-                  </button>
+                </button>
             </nav>
         </div>
     </header>
@@ -311,20 +311,20 @@
     <!-- NUMBER  -->
     <section class="number">
         <div class="container">
-            <div class="number__content">
-                <div class="number__item">
+            <div class="row">
+                <div class="number__item col-6 col-lg-3">
                     <p class="counter">730</p>
                     <h4>Happy Clients</h4>
                 </div>
-                <div class="number__item">
+                <div class="number__item col-6 col-lg-3">
                     <p class="counter">80</p>
                     <h4>Professionals</h4>
                 </div>
-                <div class="number__item">
+                <div class="number__item col-6 col-lg-3">
                     <p class="counter">812</p>
                     <h4>Adopted Pets</h4>
                 </div>
-                <div class="number__item">
+                <div class="number__item col-6 col-lg-3">
                     <p class="counter">90</p>
                     <h4>Awards</h4>
                 </div>
@@ -345,7 +345,7 @@
                 <div class="pricing-sec-7 row justify-content-center no-gutters">
                     <!-- pricing grid 1 -->
                     <div class="pricing-gd-left pric-7-1 col-lg-4">
-                        <div class="w3l-pricing-7">
+                        <div class="w3l-pricing-7 priceSide">
                             <div class="w3l-pricing-7-top">
                                 <h6 class="one-light">
                                     Free Package</h6>
@@ -400,7 +400,7 @@
                     </div>
                     <!-- pricing grid 3 -->
                     <div class="pricing-gd-left pric-7-2 col-lg-4">
-                        <div class="w3l-pricing-7">
+                        <div class="w3l-pricing-7 priceSide">
                             <div class="w3l-pricing-7-top">
                                 <h6 class="one-light">Pro Package </h6>
                                 <h4>
@@ -647,11 +647,6 @@
                                 <span class="fa fa-angle-left"></span>
                             </button>
                         </div>
-                        <div class="owl-dots">
-                            <button role="button" class="owl-dot"><span></span></button>
-                            <button role="button" class="owl-dot active"><span></span></button>
-                            <button role="button" class="owl-dot"><span></span></button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -713,38 +708,23 @@
                                     <p>
                                         <strong>Email</strong>
                                         : <a href="/cdn-cgi/l/email-protection#2f4a574e425f434a6f424e4643014c4042">
-                                            <span class="__cf_email__"
-                                                data-cfemail="90f5e8f1fde0fcf5d0fdf1f9fcbef3fffd">[email&#160;protected]</span></a>
+                                            example@gmail.com</a>
                                     </p>
                                 </li>
                             </ul>
                             <div class="main-social-footer-28 mt-3 FooterSocial">
-                                <ul class="social-icons">
-                                    <li class="facebook">
-                                        <a href="https://www.facebook.com/w3layouts/" title="Facebook">
-                                            <span class="fa fa-facebook" aria-hidden="true"></span>
-                                        </a>
-                                    </li>
-
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/W3layouts" title="Twitter">
-                                            <span class="fa fa-twitter" aria-hidden="true"></span>
-                                        </a>
-                                    </li>
-
-                                    <li class="dribbble">
-                                        <a href="https://dribbble.com/w3layouts" title="Dribbble">
-                                            <span class="fa fa-dribbble" aria-hidden="true"></span>
-                                        </a>
-                                    </li>
-
-                                    <li class="google">
-                                        <a href="https://myaccount.google.com/intro/profile" title="Google">
-                                            <span class="fa fa-google" aria-hidden="true"></span>
-                                        </a>
-                                    </li>
-
-                                </ul>
+                                <a href="https://www.facebook.com/w3layouts/" title="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/W3layouts" title="Twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="https://dribbble.com/w3layouts" title="Dribbble">
+                                    <i class="fa-brands fa-dribbble"></i>
+                                </a>
+                                <a href="https://myaccount.google.com/intro/profile" title="Google">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-7">
@@ -809,11 +789,11 @@
                 </div>
             </div>
         </footer>
-        <!-- move top icon -->
-        <button onclick="topFunction()" id="movetop" title="Go to top">
-            <span class="fa fa-angle-up"></span>
-        </button>
-        <!-- move top icon -->
+       
+        <!-- back to top -->
+        <div class="backToTop cd-top text-replace js-cd-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
     </section>
 
 
@@ -905,6 +885,10 @@
             })
         })
     </script>
+
+    <!-- back to top js -->
+    <script src="./js/backtotop/main.js"></script>
+    <script src="./js/backtotop/util.js"></script>
 
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"

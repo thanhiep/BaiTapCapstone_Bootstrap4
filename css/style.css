@@ -88,14 +88,18 @@ a:hover {
 .dark .services .card,
 .dark #pooNavbar .dropdown-menu,
 .dark #pooNavbar ul,
-.dark #pooNavbar .dropdown-menu a:hover {
+.dark #pooNavbar .dropdown-menu a:hover,
+.dark #pricing .w3l-pricing-7,
+.dark #clients .testimonial  {
     background-color: #151515;
 }
 
 .dark header .searchButton,
 .dark .services,
 .dark .services .card:hover,
-.dark .offer i {
+.dark .offer i,
+.dark #pricing,
+.dark #clients {
     background-color: #222222;
 }
 
@@ -105,7 +109,17 @@ a:hover {
 .dark a,
 .dark .services .card-title a,
 .dark .services .card-text,
-.dark .offer ul li span {
+.dark .offer ul li span,
+.dark #pricing h3,
+.dark #pricing .pricing-sec-7 h6,
+.dark #pricing h4 span,
+.dark #pricing ul li,
+.dark #about h3,
+.dark #about p,
+.dark #clients h3,
+.dark #clients .testimonial q,
+.dark .w3l-bottom .header-section h3,
+.dark .w3l-bottom .header-section p {
     color: #dddddd;
 }
 
@@ -512,10 +526,10 @@ header .searchButton:hover {
     text-align: center;
 }
 
-.number__content {
+/* .number__content {
     display: flex;
     justify-content: space-around;
-}
+} */
 
 .number__item {
     width: 25%;
@@ -590,6 +604,12 @@ ul {
 
 /* !PRICING */
 /* content */
+#pricing{
+    text-align: center;
+}
+#pricing .priceSide{
+    padding: 60px 0;
+}
 .w3l-pricing-7-main {
     background: rgba(147, 107, 232, 0.05);
 }
@@ -871,3 +891,43 @@ form {
     color: #f53626;
     opacity: 0.9;
 }
+.w3l-footer a,
+.w3l-footer .PoochCareFooter .footer-top-28 a{
+    color: #696969;
+    margin-right: 20px;
+    transition: .5s;
+}
+.w3l-footer .footer-top-28 a:hover,
+.w3l-footer #archives-4 a:hover,
+.w3l-footer #categories-4 a:hover,
+.w3l-footer #meta-4 a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.w3l-footer .footer-top-28 .FooterSocial a:hover{
+    border-bottom: 0;
+}
+
+/* back to top */
+.backToTop{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #189a46;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    opacity: 0;
+}
+.backToTop:hover{
+    transform: translateY(-10px);
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
