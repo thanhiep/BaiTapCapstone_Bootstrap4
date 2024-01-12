@@ -26,6 +26,9 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+    <!-- VIDEO POPUP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- BS4-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -446,15 +449,14 @@
                             <img src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/images/banner2.jpg"
                                 class="img-fluid radius-image video-popup-image" alt="video-popup" />
                             <a href="#small-dialog"
-                                class="popup-with-zoom-anim play-view text-center position-absolute">
+                                class="popup-with-zoom-anim play-view text-center position-absolute open-popup-link">
                                 <span class="video-play-icon">
                                     <span class="fa fa-play"></span>
                                 </span>
                             </a>
                             <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
                             <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                                <iframe src="https://player.vimeo.com/video/101587706" frameborder="0"
-                                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe title="vimeo-player" src="https://player.vimeo.com/video/101587706?h=187bfc0989" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -789,7 +791,7 @@
                 </div>
             </div>
         </footer>
-       
+
         <!-- back to top -->
         <div class="backToTop cd-top text-replace js-cd-top">
             <i class="fa-solid fa-angle-up"></i>
@@ -820,40 +822,23 @@
 
 
     <!-- VIDEO POPUP -->
-    <script
-        src="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(document).ready(function () {
-            $('.popup-with-zoom-anim').magnificPopup({
-                type: 'inline',
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
 
                 fixedContentPos: false,
                 fixedBgPos: true,
 
-                overflowY: 'auto',
+                overflowY: "auto",
 
                 closeBtnInside: true,
                 preloader: false,
 
                 midClick: true,
                 removalDelay: 300,
-                mainClass: 'my-mfp-zoom-in'
-            });
-
-            $('.popup-with-move-anim').magnificPopup({
-                type: 'inline',
-
-                fixedContentPos: false,
-                fixedBgPos: true,
-
-                overflowY: 'auto',
-
-                closeBtnInside: true,
-                preloader: false,
-
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-slide-bottom'
+                mainClass: "my-mfp-zoom-in"
             });
         });
     </script>
