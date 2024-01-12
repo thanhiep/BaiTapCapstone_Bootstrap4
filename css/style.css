@@ -409,3 +409,372 @@ header .searchButton:hover {
         padding: 0 0 70px 0;
     }
 }
+
+/*! NUMBER */
+.number {
+    background-color: #189a46;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0 50px;
+    text-align: center;
+}
+
+.number__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.number__item {
+    width: 25%;
+}
+
+.number__item p {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.number__item h4 {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+
+/*! NVM-GLOBAL */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #189A46;
+    border-color: #189A46;
+}
+
+.btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #116E32;
+    border-color: #116E32;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.hny-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+
+/* !PRICING */
+/* content */
+.w3l-pricing-7-main {
+    background: rgba(147, 107, 232, 0.05);
+}
+
+.w3l-pricing-7-main .pricing-gd-left {
+    background: #fff;
+    border-radius: 6px;
+    align-self: center;
+}
+
+.w3l-pricing-7-main .pricing-sec-7 {
+    margin: 0 5% auto;
+    margin-top: 0;
+    width: 90%;
+}
+
+
+.pricing-gd-left.pric-7.active .w3l-pricing-7-top {
+    padding: 3em 2.5em 0.5em;
+    background: #189a46;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.pricing-gd-left.pric-7.active .w3l-pricing-7-bottom {
+    padding: 2em 2.5em 3.5em;
+}
+
+
+.w3l-pricing-7-main .pricing-gd-left.active {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    z-index: 1;
+    margin: 0;
+    box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+    border-radius: 6px;
+}
+
+
+/* text */
+
+.w3l-pricing-7-bottom {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.w3l-pricing-7-main h4 {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #189A46;
+}
+
+.w3l-pricing-7-main h4 span {
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+
+
+.w3l-pricing-7-main h5 {
+    font-size: 15px;
+    line-height: 20px;
+    color: #189a46;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.w3l-pricing-7-main h6 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.w3l-pricing-7-main .pricing-gd-left.active h6,
+.w3l-pricing-7-main .pricing-gd-left.active h4 {
+    color: #fff;
+}
+
+.w3l-pricing-7-main ul.links li {
+    list-style: none;
+    margin-bottom: 5px;
+    color: #696969;
+}
+
+/*! VIDEO POPUP */
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute;
+}
+/* video ẩn*/
+#small-dialog {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.mfp-hide {
+    display: none !important;
+}
+
+div#small-dialog iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* video ẩn - end */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.radius-image {
+    border-radius: 10PX;
+}
+
+/* button play */
+.w3l-index5 .play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+
+
+.w3l-index5 span.video-play-icon {
+    background: #fff;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    animation: ripple 1s linear infinite;
+}
+
+.w3l-index5 span.fa.fa-play {
+    line-height: 55px;
+}
+.w3l-index5 span.video-play-icon span {
+    color: #189a46;
+}
+
+
+
+
+
+/*! TESTIMONIAL */
+.w3l-clients {
+    background: rgba(147, 107, 232, 0.05);
+}
+
+.w3l-clients .testimonial {
+    display: block;
+    margin: 0;
+    padding: 40px 30px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+}
+
+.w3l-clients .test-img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 2px;
+    background: #d8d8d8;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 25px;
+    position: relative;
+}
+
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot.active span, .owl-two.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+    background: #189a46;
+    width: 30px;
+    height: 10px;
+}
+
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: transparent;
+}
+
+
+/*! HOMEPAGE SUBSCRIBE */
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.w3l-bottom form.subscribe-wthree input[type="email"] {
+    font-size: 16px;
+    color: var(--title-color);
+    border-radius: var(--border-radius);
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 70%;
+    background: #fff;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.w3l-bottom .subscribe-wthree-field {
+    justify-content: space-between;
+}
+
+.w3l-bottom form.subscribe-wthree button {
+    flex-basis: 27%;
+}
+
+/*! FOOTER */
+.w3l-footer footer.footer-28 {
+    background: #111;
+}
+
+.w3l-footer h6.footer-title-28 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.w3l-footer .footer-list-28 ul li a,
+.w3l-footer .footer-list-28 ul li p {
+    font-size: 16px;
+    color: #696969;
+    line-height: 28px;
+}
+
+.w3l-footer .midd-footer-28 {
+    background: #111;
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+
+.w3l-footer .copy-footer-28 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #696969;
+    margin-bottom: 0;
+}
+
+.w3l-footer .copy-footer-28 a {
+    color: #f53626;
+    opacity: 0.9;
+}
